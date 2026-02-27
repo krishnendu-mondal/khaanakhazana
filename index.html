@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaana Khajana</title>
+    <title>Khaana Khazana</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -194,7 +194,48 @@
             margin: 6% 6% 6% 6%;
             font-size: 16px;
         }
-
+        /* -----------------CSS for footer--------------------- */
+        .footer{
+            width: 100%;
+            height: fit-content;
+            margin-top: 1rem;
+            padding: 5% 5% 2% 5%;
+            background-color: rgba(0, 0, 0, 0.629);
+            color: rgba(240, 248, 255, 0.726);
+            font-size: 13px;
+        }
+        .topside{
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+        .topside a{
+            font-size: 2rem;
+        }
+        .prod-col-grp{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .prod-heading{
+            font-size: 15px;
+            margin-bottom: 5px;
+            color: rgb(154, 154, 154);
+        }
+        .links .link{
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        .bottomside{
+            margin-top: 50px;
+            border-top: 1px #fff9 solid;
+            padding: 1rem 0 1rem 0;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         /* -----------------CSS for responsive--------------------- */
 
         @media only screen and (max-width: 600px){
@@ -299,7 +340,7 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: antiquewhite;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="color: crimson;">Khaana Khajana</a>
+            <a class="navbar-brand" href="index.html" style="color: crimson;">K.Khazana</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -386,13 +427,13 @@
                <div class="card-heading"><h3>Our Services</h3></div> 
                 <div class="service-list">
                     <div id="first">
-                        <a href="#"> <p>Quick delivery</p></a>
+                        <a href="#"> <p>Quick Delivery</p></a>
                     </div>
                     <div id="second">
-                        <a href="#"> <p>Bulk order</p></a>
+                        <a href="#"> <p>Bulk Order</p></a>
                     </div>
                     <div id="third">
-                        <a href="#"> <p>Event food management</p></a>
+                        <a href="#"> <p>Event Management</p></a>
                     </div> 
                 </div>
             </div>
@@ -405,13 +446,53 @@
         </div>
 
     </div>
+    <div class="footer">
+        <div class="topside">
+            <a class="navbar-brand" href="index.html" style="color: crimson;">K.Khazana</a>
+            <div class="prod-col-grp">
+                <div class="prod-col">
+                    <div class="prod-heading">Product</div>
+                    <div class="links">
+                        <div class="link">Overview</div>
+                        <div class="link">Features</div>
+                        <div class="link">Solutions</div>
+                        <div class="link">Tutorials</div>
+                        <div class="link">Pricing</div>
+                        <div class="link">Releases</div>
+                    </div>
+                </div>
+                <div class="prod-col">
+                    <div class="prod-heading">Company</div>
+                    <div class="links">
+                        <div class="link">About us</div>
+                        <div class="link">Careers</div>
+                        <div class="link">Press</div>
+                        <div class="link">News</div>
+                        <div class="link">Media kit</div>
+                        <div class="link">Contact</div>
+                    </div>
+                </div>
+                <div class="prod-col">
+                    <div class="prod-heading">Resources</div>
+                    <div class="links">
+                        <div class="link">Blog</div>
+                        <div class="link">Newsletter</div>
+                        <div class="link">Events</div>
+                        <div class="link">Help center</div>
+                        <div class="link">Tutorials</div>
+                        <div class="link">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomside">
+            <div class="slogan">Good Food Good Life &#10084;</div>
+            <div class="copyright">&copy;2026 Khaana Khazana | All rights reserved.</div>
+        </div>
+    </div>
 
     <script>
         
-        // obj.getHours(); //returns 24 hours
-        // obj.getMinutes(); //returns minutes
-        // obj.getSeconds(); //returns seconds
-
         hour = new Date().getHours();
         minute = new Date().getMinutes();
         
