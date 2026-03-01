@@ -66,7 +66,15 @@
                 margin-bottom: 25px;
                 margin-top: 15px;
             }
-
+            .already{
+                font-size: 13px;
+            }
+            .agree{
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
     </style>
 </head>
 <body>
@@ -112,7 +120,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container px-4">
         <div class="row mt-5">
             <div class="col-lg-3 bg-white m-auto" style="border-radius: 6px;">
 
@@ -139,7 +147,7 @@
 
                     <div class="form-check d-flex mb-1 text-muted">
                         <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" required/>
-                        <label class="form-check-label" for="form2Example3g">I agree to your <a href="#" style="text-decoration: none; color: crimson;">Terms & Condition</a></label>
+                        <label class="form-check-label agree" for="form2Example3g">I agree to your <a href="#" style="text-decoration: none; color: crimson;">Terms & Condition</a></label>
                     </div>
 
                     <div id="create">
@@ -148,7 +156,7 @@
                 </form>
                 <div class="text-center mt-5 mb-4">
 
-                    <p class="text-muted">Already have an account ?</p>
+                    <p class="text-muted already">Already have an account ?</p>
                     <a href="customerlogin.html"><button type="button" id="signinbtn">Sign in</button></a>
                     
                 </div>

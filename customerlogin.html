@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,27 +25,27 @@
             font-family: Lucida Sans;
         }
 
-        #signupbtn{
+        #signupbtn {
             height: 5vh;
             width: auto;
             min-width: 35%;
             border-radius: 4px;
-            background-color:rgb(215, 47, 81);
+            background-color: rgb(215, 47, 81);
             color: azure;
             border-width: 1px;
             border: none;
         }
-        
-        #signupbtn:hover{
+
+        #signupbtn:hover {
             transition-delay: 5ms;
             transition-timing-function: ease-in-out;
             transition-duration: 100ms;
-            background-color:rgb(175, 42, 117);
+            background-color: rgb(175, 42, 117);
             color: white;
-            
+
         }
 
-        #loginbtn{
+        #loginbtn {
             height: 5vh;
             width: 35%;
             border-radius: 4px;
@@ -53,65 +54,78 @@
             border-width: 1px;
             border: none;
         }
-        
-        #loginbtn:hover{
+
+        #loginbtn:hover {
             transition-delay: 5ms;
             transition-timing-function: ease-in-out;
             transition-duration: 100ms;
-            background-color:rgb(175, 42, 117);
+            background-color: rgb(175, 42, 117);
             color: white;
-            
+
         }
 
-        #signupbtn{
+        #signupbtn {
             height: 5vh;
             width: auto;
             min-width: 100%;
             border-radius: 4px;
-            background-color:  rgb(215, 47, 81);
-            color:white;
+            background-color: rgb(215, 47, 81);
+            color: white;
             border: none;
             margin-bottom: 25px;
-  
+
         }
 
-        #signupbtn:hover{
+        #signupbtn:hover {
             transition-delay: 10ms;
             transition-timing-function: ease-in-out;
             transition-duration: 100ms;
-            background-color:#a83885;
+            background-color: #a83885;
             color: white;
         }
 
-        #signinbtn{
+        #signinbtn {
             height: 5vh;
             width: auto;
             min-width: 30%;
             border-radius: 4px;
-            background-color:  rgb(215, 47, 81);
-            color:white;
+            background-color: rgb(215, 47, 81);
+            color: white;
             border: none;
 
         }
 
-        #signinbtn:hover{
+        #signinbtn:hover {
             transition-delay: 10ms;
             transition-timing-function: ease-in-out;
             transition-duration: 100ms;
-            background-color:#a83885;
+            background-color: #a83885;
             color: white;
         }
 
-        #create{
+        #create {
             text-align: center;
             margin-bottom: 25px;
             margin-top: 15px;
         }
 
-        
+        .new-to {
+            font-size: 13px;
+        }
+
+        .rem-me {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+        }
     </style>
-    
+
 </head>
+
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -121,8 +135,9 @@
     <nav class="navbar navbar-expand-lg" style="background-color: antiquewhite;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" style="color: crimson;">K.Khazana</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -154,45 +169,46 @@
             </div>
         </div>
     </nav>
- 
-    <div class="container">
+
+    <div class="container px-4">
         <div class="row mt-5">
             <div class="col-lg-3 bg-white m-auto" style="border-radius: 6px;">
-    
+
                 <div class="mt-4 mb-4">
                     <h2 class="text-center" style="color: crimson;">Sign in</h2>
                 </div>
-    
+
                 <form action="#" style="margin: 6%;">
 
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email address" required>
                     </div>
-    
+
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" placeholder="Password" required>
-                    </div>         
-    
+                    </div>
+
                     <div class="form-check d-flex mb-2 text-muted">
                         <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" required />
-                        <label class="form-check-label" for="form2Example3g">Remember me</label>
+                        <label class="form-check-label rem-me" for="form2Example3g">Remember me</label>
                     </div>
-    
+
                     <div id="create" class="mb-1">
                         <button type="submit" id="signupbtn">Sign in</button>
                     </div>
                 </form>
 
                 <div class="text-center mt-5 mb-4">
-    
-                    <p class="text-muted">New to Khaana Khajana ?</p>
+
+                    <p class="text-muted new-to">New to Khaana Khajana ?</p>
                     <a href="registration.html"><button type="button" id="signinbtn">Sign up</button></a>
-    
+
                 </div>
 
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
